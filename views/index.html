@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Desk</title>
+
+    <!--Icone que fica do lado do title-->
+    <link rel="icon" href="../images/icon.png">
+
+    <!--Icones usados do Phospor Icons-->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <!--Fontes usadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Css externo-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/page-landing.css">
+    <link rel="stylesheet" href="../css/animation.css">
+  </head>
+
+  <body>
+    <div id="page-landing">
+        <div id="container">
+            <header>
+                <img
+                id="logo"
+                class="animate-up"
+                src="../images/Logo_Help_Desk.svg"
+                alt="Logomarca Help Desk"
+                >
+
+                <h1 class="animate-up">Bem-vindo! Faça seu login</h1>
+            </header>
+
+            <main>
+                <div class="login_input animate-up">
+                    <label for="email">Seu e-mail</label>
+                    <i class="ph-envelope-simple input-icon"></i>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="login_input animate-up">
+                    <label for="senha">Senha</label>
+                    <i class="ph-lock-simple input-icon"></i>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <button class="animate-up">Entrar na plataforma</button>
+            </main>
+        </div>
+    </div>
+  </body>
+</html>

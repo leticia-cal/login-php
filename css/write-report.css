@@ -1,0 +1,125 @@
+#page-write-report{
+    background: #111113;
+    min-height: 100vh;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    padding: 5rem 0;
+}
+
+.container .chamada{
+    text-align: start;
+    margin-bottom: 5rem;
+    animation-delay: 100ms; /*atraso*/
+}
+
+form{
+    text-align: start;
+    max-width: 950px;
+}
+
+form .input-block{
+    animation-delay: 150ms; /*atraso*/
+}
+
+form > div:first-child{
+    max-width: 400px;
+}
+
+form .input-block label{
+    display: block;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+form .input-block input, form .input-block select, form .input-block textarea{
+    box-sizing: border-box;
+}
+
+form .input-block input{
+    background: #292929;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 4rem;
+    color: #A3A3A3;
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Inter', Helvetica, sans-serif;
+}
+
+form .input-block input:focus{
+    outline-color: #0EA5E9;
+    outline-style: solid;
+}
+
+form #div-selector{
+    width: 200px;
+}
+
+form .input-block select{
+    background: #292929;
+    border-radius: 6px;
+    border: none;
+    color: #A3A3A3;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Inter', Helvetica, sans-serif;
+}
+
+form .input-block select:focus{
+    outline-color: #0EA5E9;
+    outline-style: solid;
+}
+
+form .input-block textarea{
+    background: #292929;
+    border-radius: 6px;
+    border: none;
+    color: #A3A3A3;
+    width: 100%;
+    height: 12rem;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 1rem;
+    font-family: 'Inter', Helvetica, sans-serif;
+}
+
+form .input-block textarea:focus{
+    outline-color: #0EA5E9;
+    outline-style: solid;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-------------------------------desktop version ------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+
+@media (min-width: 534px) and (max-width: 1023px) {
+    main {
+      min-height: calc(100vh - 5.3rem);
+      padding: 5rem 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    main{
+      min-height: calc(100vh - 5.3rem);
+      padding: 0 0;
+    }
+  }

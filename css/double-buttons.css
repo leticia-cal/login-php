@@ -1,0 +1,6 @@
+.double-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15vw;
+    animation-delay: 200ms; /*atraso*/
+}

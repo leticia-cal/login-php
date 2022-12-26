@@ -1,0 +1,32 @@
+/* animações */
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up{
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards; /* para nas propriedades do to */
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.animate-fadein{
+    animation-name: fadein;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+}
