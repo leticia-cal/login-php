@@ -1,3 +1,7 @@
+<?php
+  require_once 'validador_acesso.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -7,7 +11,7 @@
     <title>Help Desk - Escreva um chamado</title>
 
     <!--Icone que fica do lado do title-->
-    <link rel="icon" href="../images/icon.png" />
+    <link rel="icon" href="./images/icon.png" />
 
     <!--Icones usados do Phospor Icons-->
     <script src="https://unpkg.com/phosphor-icons"></script>
@@ -21,14 +25,14 @@
     />
 
     <!--Css externo-->
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/write-report.css" />
-    <link rel="stylesheet" href="../css/animation.css" />
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/title-subtitle.css">
-    <link rel="stylesheet" href="../css/main-button.css">
-    <link rel="stylesheet" href="../css/secundary-button.css">
-    <link rel="stylesheet" href="../css/double-buttons.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/write-report.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/title-subtitle.css">
+    <link rel="stylesheet" href="./css/main-button.css">
+    <link rel="stylesheet" href="./css/secundary-button.css">
+    <link rel="stylesheet" href="./css/double-buttons.css">
   </head>
 
   <body>
@@ -38,12 +42,12 @@
           <ul>
             <li>
               <a href="./select_action.html">
-                <img src="../images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
+                <img src="./images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
               </a>
             </li>
             <div>
               <li id="menu_nome">
-                <p>Letícia</p>
+              <p><?=$_SESSION['nome']?></p>
               </li>
   
               <li id="menu_icone">
@@ -52,7 +56,7 @@
   
               <li id="menu_sair">
                 <h4>
-                  <a href="#">Sair</a>
+                  <a href="logoff.php">Sair</a>
                 </h4>
               </li>
             </div>
@@ -69,7 +73,7 @@
             </h3>
           </div> <!--Fim chamada-->
 
-          <form action="">
+          <form action="registra_chamado.php" method="post">
             <div class="input-block animate-up">
               <label for="title">Titulo</label>
               <input type="text" id="title" name="title" required>
@@ -78,11 +82,11 @@
             <div class="input-block animate-up" id="div-selector">
               <label for="category">Categoria</label>
               <select name="category" id="category">
-                <option value="create-user">Criação Usuário</option>
-                <option value="printer">Impressora</option>
-                <option value="hardware">Hardware</option>
-                <option value="software">Software</option>
-                <option value="internet">Rede</option>
+                <option>Criação Usuário</option>
+                <option>Impressora</option>
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Rede</option>
               </select>
             </div>
 
@@ -92,7 +96,7 @@
             </div>
 
             <div class="double-buttons animate-up">
-              <button class="secundary-button">Voltar</button>
+              <a class="secundary-button" href="select-action.php">Voltar</a>
               <button class="main-button">Concluir</button>
             </div>
 

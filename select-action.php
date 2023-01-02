@@ -1,3 +1,7 @@
+<?php
+  require_once 'validador_acesso.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -7,7 +11,7 @@
     <title>Help Desk - Selecione uma ação</title>
 
     <!--Icone que fica do lado do title-->
-    <link rel="icon" href="../images/icon.png" />
+    <link rel="icon" href="./images/icon.png" />
 
     <!--Icones usados do Phospor Icons-->
     <script src="https://unpkg.com/phosphor-icons"></script>
@@ -21,11 +25,11 @@
     />
 
     <!--Css externo-->
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/select-action.css" />
-    <link rel="stylesheet" href="../css/animation.css" />
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/title-subtitle.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/select-action.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/title-subtitle.css">
   </head>
 
   <body>
@@ -35,12 +39,12 @@
           <ul>
             <li>
               <a href="./select_action.html">
-                <img src="../images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
+                <img src="./images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
               </a>
             </li>
             <div>
               <li id="menu_nome">
-                <p>Letícia</p>
+              <p><?=$_SESSION['nome']?></p>
               </li>
   
               <li id="menu_icone">
@@ -49,7 +53,7 @@
   
               <li id="menu_sair">
                 <h4>
-                  <a href="#">Sair</a>
+                  <a href="logoff.php">Sair</a>
                 </h4>
               </li>
             </div>
@@ -69,7 +73,7 @@
 
           <div class="cards-container"> <!--Inicio cards-container-->
             <div class="card"> <!--Inicio card-->
-              <a href="#">
+              <a href="write-report.php">
                 <h3>Escrever novo chamado</h3>
                 <hr />
                 <p>
@@ -81,7 +85,7 @@
             </div> <!--Fim card-->
 
             <div class="card"> <!--Inicio card-->
-              <a href="#">
+              <a href="view-reports.php">
                 <h3>Consultar chamados</h3>
                 <hr />
                 <p>
