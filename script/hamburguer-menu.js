@@ -3,5 +3,4 @@ const menuCentraliza = document.querySelector(".centraliza");
 
 hamburguer.addEventListener("click", () => {
     menuCentraliza.classList.toggle("active");
-    console.log("clicou");
 })
