@@ -35,14 +35,16 @@
   <body>
     <div id="page-select-action"> <!--Inicio page-select-action-->
       <nav>
-        <div class="container"> <!--Inicio container-->
+        <div class="container animate-fadein"> <!--Inicio container-->
           <ul>
+
             <li>
               <a href="./select_action.html">
                 <img src="./images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
               </a>
             </li>
-            <div>
+
+            <div class="centraliza"> <!--Inicio div que centraliza nome, icone perfil e sair-->
               <li id="menu_nome">
               <p><?=$_SESSION['nome']?></p>
               </li>
@@ -56,14 +58,18 @@
                   <a href="logoff.php">Sair</a>
                 </h4>
               </li>
-            </div>
+            </div> <!--Fim div que centraliza nome, icone perfil e sair-->
+
+            <div class="hamburguer"> <!--Inicio hamburguer-->
+              <i class="ph-list-light"></i>
+            </div> <!--Fim hamburguer-->
           </ul>
         </div> <!--Fim container-->
       </nav>
 
       <main>
         <div class="container"> <!--Inicio container-->
-          <div class="chamada"> <!--Inicio chamada-->
+          <div class="chamada animate-up"> <!--Inicio chamada-->
             <h1>Selecione uma ação!</h1>
             <h3>
               Você pode escrever um novo chamado ou verificar os chamados já
@@ -72,7 +78,7 @@
           </div> <!--Fim chamada-->
 
           <div class="cards-container"> <!--Inicio cards-container-->
-            <div class="card"> <!--Inicio card-->
+            <div class="card animate-up"> <!--Inicio card-->
               <a href="write-report.php">
                 <h3>Escrever novo chamado</h3>
                 <hr />
@@ -84,7 +90,7 @@
               </a>
             </div> <!--Fim card-->
 
-            <div class="card"> <!--Inicio card-->
+            <div class="card animate-up"> <!--Inicio card-->
               <a href="view-reports.php">
                 <h3>Consultar chamados</h3>
                 <hr />
@@ -97,5 +103,6 @@
         </div> <!--Fim container-->
       </main>
     </div> <!--Fim page-select-action-->
+    <script src="./script/hamburguer-menu.js"></script>
   </body>
 </html>

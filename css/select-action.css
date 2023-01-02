@@ -16,6 +16,7 @@ main{
 .container .chamada{
     text-align: start;
     margin-bottom: 5rem;
+    animation-delay: 100ms; /*atraso*/
 }
 
 .cards-container{
@@ -32,6 +33,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-delay: 150ms; /*atraso*/
 }
 
 .card:hover{

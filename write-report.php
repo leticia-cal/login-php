@@ -37,15 +37,17 @@
 
   <body>
     <div id="page-write-report"> <!--Inicio page-write-report-->
-      <nav>
+    <nav>
         <div class="container animate-fadein"> <!--Inicio container-->
           <ul>
+
             <li>
               <a href="./select_action.html">
                 <img src="./images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
               </a>
             </li>
-            <div>
+
+            <div class="centraliza"> <!--Inicio div que centraliza nome, icone perfil e sair-->
               <li id="menu_nome">
               <p><?=$_SESSION['nome']?></p>
               </li>
@@ -59,7 +61,11 @@
                   <a href="logoff.php">Sair</a>
                 </h4>
               </li>
-            </div>
+            </div> <!--Fim div que centraliza nome, icone perfil e sair-->
+
+            <div class="hamburguer"> <!--Inicio hamburguer-->
+              <i class="ph-list-light"></i>
+            </div> <!--Fim hamburguer-->
           </ul>
         </div> <!--Fim container-->
       </nav>
@@ -104,5 +110,6 @@
         </div> <!--Fim container-->
       </main>
     </div> <!--Fim page-write-report-->
+    <script src="./script/hamburguer-menu.js"></script>
   </body>
 </html>

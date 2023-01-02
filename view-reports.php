@@ -8,7 +8,7 @@
    $chamados_aux = array();
 
    //abrindo o arquivo
-   $arquivo = fopen('registros.txt','r'); //abre o arquivo txt em modo leitura
+   $arquivo = fopen('../../PHP_Projeto/registros.txt','r'); //abre o arquivo txt em modo leitura
    //fopen(nome do arquivo , modo de abertura)
 
    //percorrer o arquivo enquanto houverem registros (linhas) a serem recuperados
@@ -67,33 +67,36 @@
     <div id="page-view-reports">
       <!--Inicio page-view-report-->
       <nav>
-        <div class="container animate-fadein">
-          <!--Inicio container-->
+        <div class="container animate-fadein"> <!--Inicio container-->
           <ul>
+
             <li>
               <a href="./select_action.html">
                 <img src="./images/Logo_Help_Desk.svg" alt="Logo Help Desk" />
               </a>
             </li>
-            <div>
-              <!-- <i class="ph-list-light"></i> -->
-              <li id="menu_nome">
-                <p><?=$_SESSION['nome']?></p>
-              </li>
 
+            <div class="centraliza"> <!--Inicio div que centraliza nome, icone perfil e sair-->
+              <li id="menu_nome">
+              <p><?=$_SESSION['nome']?></p>
+              </li>
+  
               <li id="menu_icone">
                 <i class="ph-user-circle-light"></i>
               </li>
-
+  
               <li id="menu_sair">
                 <h4>
                   <a href="logoff.php">Sair</a>
                 </h4>
               </li>
-            </div>
+            </div> <!--Fim div que centraliza nome, icone perfil e sair-->
+
+            <div class="hamburguer"> <!--Inicio hamburguer-->
+              <i class="ph-list-light"></i>
+            </div> <!--Fim hamburguer-->
           </ul>
-        </div>
-        <!--Fim container-->
+        </div> <!--Fim container-->
       </nav>
 
       <main>
@@ -135,5 +138,6 @@
       </main>
     </div>
     <!--Fim page-view-report-->
+    <script src="./script/hamburguer-menu.js"></script>
   </body>
 </html>
