@@ -52,14 +52,14 @@ Para a tabela de perfis as chaves são: 1 e 2, representando, respectivamente, o
   <li>Criar o arquivo "valida_login.php"</li>
   <ul>
     <li>
-      Colar o seguinte código dentro do arquivo:<br><br>
-      (abertura tag php)<br>
-        require "../../PHP_Projeto/valida_login.php";<br>
-      (fechamento tag php)<br><br>
+      Colar o seguinte código dentro do arquivo entre as tags PHP:
+      <pre>
+        require "../../PHP_Projeto/valida_login.php";
+      </pre>
       </li>
     </ul>
-   <li>Modificar o arquivo "registra_chamado.php" na linha 11, escrevendo:<br>$arquivo = fopen('../../PHP_Projeto/registros.txt', 'a');<br><br></li>
-   <li>Modificar o arquivo "view_reports.php" na linha 11, escrevendo:<br>$arquivo = $arquivo = fopen('../../PHP_Projeto/registros.txt','r'); //abre o arquivo txt em modo leitura<br><br></li>
+   <li><br>Modificar o arquivo "registra_chamado.php" na linha 11, escrevendo:<pre>$arquivo = fopen('../../PHP_Projeto/registros.txt', 'a');</pre><br></li>
+   <li>Modificar o arquivo "view_reports.php" na linha 11, escrevendo:<pre>$arquivo = $arquivo = fopen('../../PHP_Projeto/registros.txt','r'); //abre o arquivo txt em modo leitura</pre><br></li>
    <li>Executar o XAMPP</li>
    <li>Na linha do "Apache", em "Actions", clique em "Start".
    <li>Abrir o navegador</li>
