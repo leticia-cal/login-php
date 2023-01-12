@@ -52,8 +52,11 @@ Para a tabela de perfis as chaves são: 1 e 2, representando, respectivamente, o
   <li>Criar o arquivo "valida_login.php"</li>
   <ul>
     <li>
-      Colar o seguinte código dentro do arquivo entre as tags PHP:
-      <pre>require "../../PHP_Projeto/valida_login.php";</pre>
+      Colar o seguinte código dentro do arquivo:
+      <pre>
+      &lt;?php
+        require "../../PHP_Projeto/valida_login.php";
+      ?&gt;</pre>
       </li>
     </ul>
    <br><li>Modificar o arquivo "registra_chamado.php" na linha 11, escrevendo:<pre>$arquivo = fopen('../../PHP_Projeto/registros.txt', 'a');</pre><br></li>
